@@ -1,0 +1,152 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F3F0F9; /* Light background color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to ensure content remains centered */
+    text-align: center;
+}
+
+h2 {
+    color: #7889f5; /* Deep purple for the header */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+form p {
+    margin-bottom: 12px; /* Small adjustment for consistency */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"], select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #7889f5;  /* Focus effect for the inputs */
+    box-shadow: 0 0 5px rgba(120, 137, 245, 0.5); /* Subtle shadow on focus */
+}
+
+/* General Link Styling */
+a {
+    color: #7889f5; /* Deep Purple */
+    text-decoration: none; /* No underline */
+    font-size: 1rem; /* Standard font size */
+    padding: 5px 10px; /* Add spacing for button-like appearance */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover Effect */
+a:hover {
+    background-color: #999999; /* Soft Gray */
+    color: white; /* White text */
+}
+
+/* Custom input for image URL */
+#custom_image_url {
+    padding: 14px; /* Slightly larger padding to match other inputs */
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Button */
+input[type="submit"] {
+    background-color: #7889f5; /* Main Deep Purple */
+    color: white;
+    padding: 14px 15px; /* Slightly increased padding for better button size */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #5468c1; /* Darker purple on hover */
+}
+
+
+/* General Select Styling */
+select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    background-color: #fff; /* Ensure background is white */
+    color: #333; /* Ensure text color is dark */
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect for select */
+select:focus {
+    border-color: #7889f5; /* Focus effect */
+    box-shadow: 0 0 5px rgba(120, 137, 245, 0.5); /* Subtle shadow */
+}
+
+/* Styling for disabled select (when no owners available) */
+select:disabled {
+    background-color: #f3f3f3; /* Lighter background for disabled */
+    color: #aaa; /* Lighter text for disabled state */
+    cursor: not-allowed; /* Show a "not-allowed" cursor */
+}
+
+/* Conditional style when there are no images */
+select:disabled {
+    background-color: #f3f3f3;
+    color: #aaa; /* Lighter text to indicate disabled state */
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    form {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"], select, #custom_image_url, input[type="submit"] {
+        font-size: 0.9rem; /* Smaller font for mobile screens */
+    }
+}
+

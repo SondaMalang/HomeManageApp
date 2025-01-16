@@ -1,0 +1,158 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #F3F0F9; /* Light neutral background */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #7889f5; /* Main Deep Purple */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.header h4 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.header nav {
+    margin-top: 10px;
+}
+
+.header .btn {
+    background-color: #e0e0e0; /* Warm Gold */
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header .btn:hover {
+    background-color: #999999 ; /* Soft Coral Red */
+    color: white;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #7889f5; /* Main color for headers */
+}
+
+.card .btn {
+    background-color: #e0e0e0; /* Warm Gold */
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #999999 ; /* Soft Coral Red */
+    color: white;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: centre;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #7889f5; /* Slightly darker purple for contrast */
+    color: white;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header h4 {
+        font-size: 1rem;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header h4 {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1rem;               /* Set font size */
+    color: #333;                   /* Dark gray text for readability */
+    line-height: 1.6;              /* Line spacing for better readability */
+    margin: 15px 0;                /* Add some space above and below the paragraph */
+    text-align: left;            /* Center-align the paragraph text */
+    padding: 10px;                 /* Add padding for a more spacious feel */
+    background-color: #f4f4f4;     /* Light gray background */
+    border-radius: 5px;            /* Rounded corners */
+}
+

@@ -1,0 +1,97 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F3F0F9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #7889f5; /* Main Deep Purple */
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+a {
+    color: #7889f5; /* Main Deep Purple */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5468c1; /* Slightly darker purple */
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+table th {
+    background-color: #7889f5;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+table tr:hover {
+    background-color: #e8e8e8;
+}
+
+/* Image styling inside table */
+table img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+a {
+    color: #7889f5; /* Deep Purple */
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #999999; /* Soft Coral Red */
+    color: white;
+}
+
+
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+   
+}

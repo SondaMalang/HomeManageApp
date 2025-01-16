@@ -1,0 +1,109 @@
+/* Form Styling */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1rem;
+}
+
+h3 {
+    text-align: center;
+    color: #7889f5; /* Main Deep Purple */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #7889f5; /* Focus color matches main theme */
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #7889f5; /* Deep Purple */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #5468c1; /* Slightly darker purple */
+}
+
+
+a {
+    color: #7889f5; /* Deep Purple */
+    text-decoration: none; /* No underline */
+    font-size: 1rem; /* Standard font size */
+    padding: 5px 10px; /* Add spacing for button-like appearance */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+    display: inline-block; /* Make the link behave like a block element */
+}
+
+/* Hover Effect */
+a:hover {
+    background-color: #999999; /* Soft Gray */
+    color: white; /* White text */
+}
+
+/* Center the links below the form */
+form > p:last-child {
+    margin-top: 20px; /* Add spacing between the form and the links */
+}
+
+/* Make sure links are displayed inline, one below the other */
+a {
+    display: block;
+    margin: 5px 0; /* Add margin between each link */
+}
+
+/* Error or validation messages */
+#error-messages {
+    font-size: 0.9rem;
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    label,
+    input[type="text"],
+    select,
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+}
